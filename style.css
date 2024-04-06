@@ -40,8 +40,46 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sessão Menu*/
 
-section.menu{
+section.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 88px;
 
+    display: flex;
+
+    background-color: white;
+
+    padding: 0px 160px;
+}
+
+section.menu > header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+section.menu > header > img {
+    width: 24px;
+    height: 24px;
+}
+
+section.menu > nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.menu__list__item:hover {
+    font-weight: 700;
 }
 
 /*Sessão Title*/
@@ -90,9 +128,27 @@ section.footer{
 utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
 /* Menu */
+
+section.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+
+    display: flex;
+
+    background-color: white;
+
+    padding: 16px 32px;
+}
+
+.menu__list {
+    display: none;
+}
 
 /*title*/
 
@@ -107,9 +163,27 @@ utilize como referência os breakpoints @media abaixo*/
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (max-width: 480px) {
 
 /*Menu*/
+
+section.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+
+    display: flex;
+
+    background-color: white;
+
+    padding: 16px;
+}
+
+.menu__list {
+    display: none;
+}
 
 /*Titulo*/
 
