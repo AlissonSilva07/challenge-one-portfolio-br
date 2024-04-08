@@ -20,7 +20,16 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
+
+    display: flex;
+    flex-direction: column;
 }
+
+body, html {
+    width: 100%;
+    max-width: 100%;
+}
+
 ol, ul,li {
     list-style: none;
 }
@@ -42,17 +51,9 @@ de usuário complexa, e permite a reutilização de código existente sem copiar
 Link da documentação oficial!
 https://en.bem.info/methodology/quick-start/*/
 
-.all {
-    width: 100vw;
-}
-
 /*Sessão Menu*/
 
 header.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     height: 88px;
 
     padding: 0px 120px;
@@ -60,6 +61,8 @@ header.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    z-index: 100;
 }
 
 .header__logo{
@@ -70,9 +73,10 @@ header.header {
 }
 
 .header__socials_buttons {
-    background-color: var(--cor-de-fundo);
+    background-color: transparent;
     border: none;
 
+    padding: 0.5rem;
 }
 
 .header__socials_button_images {
@@ -82,8 +86,73 @@ header.header {
 
 /*Sessão Title*/
 
-section.title{
+section.hero {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 
+    padding: 48px 120px;
+
+    border: 1px solid var(--cor-da-fonte);
+}
+
+.hero__left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.hero__left_conteudo__title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    color: var(--cor-da-fonte);
+}
+
+.hero__left_conteudo__subtitle {
+    color: var(--cor-da-fonte);
+    font-size: 20px;
+}
+
+.hero__left_conteudo__title_divisor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero__left_conteudo__texto {
+    line-height: 2px;
+}
+
+.hero__left_conteudo__title_nome {
+    position: relative;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    color: var(--cor-da-fonte);
+}
+
+.hero__left_conteudo__title_nome::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 10px;
+    background: var(--cor-primary);
+}
+
+.hero__right {
+    position: absolute;
+    top: 0;
+    right: 120px;
+
+    z-index: 0;
+}
+
+.hero__right_img {
+    width: 320px;
 }
 
 /*Sessão About*/
