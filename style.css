@@ -2,17 +2,21 @@
 /*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
 coloque nas sessões indicadas*/
 
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 :root{
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+   --cor-de-fundo: #151515;
+   --cor-da-fonte: #F7F7F7;
+   --cor-primary: #5FAC8B;
 }
 
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -38,48 +42,42 @@ de usuário complexa, e permite a reutilização de código existente sem copiar
 Link da documentação oficial!
 https://en.bem.info/methodology/quick-start/*/
 
+.all {
+    width: 100vw;
+}
+
 /*Sessão Menu*/
 
-section.menu {
+header.header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 88px;
 
-    display: flex;
+    padding: 0px 120px;
 
-    background-color: white;
-
-    padding: 0px 160px;
-}
-
-section.menu > header {
-    flex: 1;
     display: flex;
     align-items: center;
-    gap: 8px;
+    justify-content: space-between;
 }
 
-section.menu > header > img {
+.header__logo{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-da-fonte);
+}
+
+.header__socials_buttons {
+    background-color: var(--cor-de-fundo);
+    border: none;
+
+}
+
+.header__socials_button_images {
     width: 24px;
     height: 24px;
-}
-
-section.menu > nav {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-}
-
-.menu__list {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-}
-
-.menu__list__item:hover {
-    font-weight: 700;
 }
 
 /*Sessão Title*/
@@ -132,22 +130,9 @@ utilize como referência os breakpoints @media abaixo*/
 
 /* Menu */
 
-section.menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 56px;
-
-    display: flex;
-
-    background-color: white;
-
+header.header {
+    height: 54px;
     padding: 16px 32px;
-}
-
-.menu__list {
-    display: none;
 }
 
 /*title*/
@@ -167,22 +152,9 @@ section.menu {
 
 /*Menu*/
 
-section.menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 56px;
-
-    display: flex;
-
-    background-color: white;
-
-    padding: 16px;
-}
-
-.menu__list {
-    display: none;
+header.header {
+    height: 54px;
+    padding: 16px 16px;
 }
 
 /*Titulo*/
