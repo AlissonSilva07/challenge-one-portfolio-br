@@ -10,6 +10,7 @@ coloque nas sessões indicadas*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #151515;
    --cor-da-fonte: #F7F7F7;
+   --cor-da-fonte-sub: #d2d2d2;
    --cor-primary: #5FAC8B;
 }
 
@@ -36,6 +37,11 @@ ol, ul,li {
 a{
     text-decoration: none;
     color: var(--cor-de-link);
+}
+
+button {
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
 }
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
@@ -72,6 +78,10 @@ header.header {
     color: var(--cor-da-fonte);
 }
 
+.header__socials {
+    padding: 0px 12px;
+}
+
 .header__socials_buttons {
     background-color: transparent;
     border: none;
@@ -80,8 +90,8 @@ header.header {
 }
 
 .header__socials_button_images {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
 }
 
 /*Sessão Title*/
@@ -92,14 +102,17 @@ section.hero {
     gap: 32px;
 
     padding: 48px 120px;
-
-    border: 1px solid var(--cor-da-fonte);
 }
 
 .hero__left {
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    text-wrap: wrap;
+
+    z-index: 50;
 }
 
 .hero__left_conteudo__title {
@@ -107,21 +120,14 @@ section.hero {
     font-size: 64px;
     font-weight: bold;
     color: var(--cor-da-fonte);
+    margin: 0;
+    padding: 0;
 }
 
 .hero__left_conteudo__subtitle {
-    color: var(--cor-da-fonte);
-    font-size: 20px;
-}
-
-.hero__left_conteudo__title_divisor {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.hero__left_conteudo__texto {
-    line-height: 2px;
+    width: 70%;
+    line-height: 20px;
+    color: var(--cor-da-fonte-sub);
 }
 
 .hero__left_conteudo__title_nome {
@@ -141,18 +147,28 @@ section.hero {
     width: 100%;
     height: 10px;
     background: var(--cor-primary);
+    z-index: -1;
 }
 
 .hero__right {
     position: absolute;
     top: 0;
     right: 120px;
-
-    z-index: 0;
+    z-index: 40;
 }
 
 .hero__right_img {
-    width: 320px;
+    width: 360px;
+}
+
+.hero__left_conteudo__button {
+    position: relative;
+    width: fit-content;
+    padding: 1rem;
+    background-color: transparent;
+    color: var(--cor-da-fonte);
+    border: 1px solid var(--cor-primary);
+    border-radius: 8px;
 }
 
 /*Sessão About*/
@@ -206,6 +222,21 @@ header.header {
 
 /*title*/
 
+section.hero {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    padding: 16px 32px;
+}
+
+.hero__right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 40;
+}
+
 /*Skills*/
 
 /*Hobbies*/
@@ -222,11 +253,63 @@ header.header {
 /*Menu*/
 
 header.header {
-    height: 54px;
     padding: 16px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
 
 /*Titulo*/
+
+section.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 32px;
+
+    padding: 16px 16px;
+}
+
+.hero__left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__left_conteudo__title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    color: var(--cor-da-fonte);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.hero__left_conteudo__title_nome {
+    position: relative;
+    font-size: 38px;
+    width: 100%;
+}
+
+.hero__left_conteudo__subtitle {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.hero__right {
+    position: relative;
+    display: flex;
+}
+
+.hero__right_img {
+    width: 200px;
+}
 
 /*Sessão sobre*/
 
