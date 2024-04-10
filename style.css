@@ -3,7 +3,6 @@
 coloque nas sessões indicadas*/
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root{
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
@@ -22,7 +21,7 @@ coloque nas sessões indicadas*/
 
 body {
     background-color: var(--cor-de-fundo) ;
-    font-family: "Inter", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     line-height: 1;
     display: flex;
     flex-direction: column;
@@ -104,7 +103,7 @@ header.header {
 }
 
 .header__logo{
-    font-family: "Space Grotesk", sans-serif;
+    
     font-size: 18px;
     font-weight: bold;
     color: var(--cor-da-fonte);
@@ -145,7 +144,7 @@ section.hero {
 
 .hero__title {
     width: 60%;
-    font-family: "Space Grotesk", sans-serif;
+    
     font-size: 72px;
     font-weight: bold;
     color: var(--cor-da-fonte);
@@ -162,7 +161,7 @@ section.hero {
 
 .hero__title_nome {
     position: relative;
-    font-family: "Space Grotesk", sans-serif;
+    
     font-size: 64px;
     font-weight: bold;
     color: var(--cor-da-fonte);
@@ -209,7 +208,7 @@ section.skills{
 
 .skills__title {
     font-size: 32px;
-    font-family: "Space Grotesk", sans-serif;
+    
     color: var(--cor-da-fonte);
     font-weight: bold;
 }
@@ -224,22 +223,20 @@ section.skills{
 .skills__item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 8px;
+    gap: 12px;
     padding: 16px;
-    border: 1px solid var(--cor-da-fonte);
-    border-radius: 8px;
-}
-
-.skills__item_icon {
-    width: 56px;
 }
 
 .skills__item_title {
-    font-size: 32px;
-    font-family: "Space Grotesk", sans-serif;
+    font-size: 42px;
+    
     color: var(--cor-da-fonte);
     font-weight: bold;
+}
+
+.skills__item_subtitle {
+    font-size: 16px;
+    color: var(--cor-da-fonte-sub);
 }
 
 /*Sessão Hobbies*/
@@ -319,12 +316,12 @@ section.hero {
     flex-direction: column;
     gap: 24px;
 
-    padding: 64px 32px 92px;
+    padding: 64px 32px 78px;
 }
 
 .hero__title {
     width: 70%;
-    font-family: "Space Grotesk", sans-serif;
+    
     font-size: 64px;
     font-weight: bold;
     color: var(--cor-da-fonte);
@@ -346,7 +343,7 @@ section.skills{
     align-items: center;
     gap: 32px;
 
-    padding: 16px 32px;
+    padding: 32px 32px;
 }
 
 .skills__title {
@@ -425,7 +422,7 @@ section.hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
 
     padding: 16px;
 }
@@ -440,7 +437,7 @@ section.hero {
 .hero__title {
     width: 100%;
     text-align: center;
-    font-family: "Space Grotesk", sans-serif;
+    
     font-size: 48px;
     font-weight: bold;
     color: var(--cor-da-fonte);
@@ -460,7 +457,7 @@ section.hero {
     width: 100%;
     text-align: center;
     position: relative;
-    font-family: "Space Grotesk", sans-serif;
+    
     font-size: 48px;
     font-weight: bold;
     color: var(--cor-da-fonte);
