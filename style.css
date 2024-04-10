@@ -14,14 +14,16 @@ coloque nas sessões indicadas*/
    --cor-primary: #5FAC8B;
 }
 
-body {
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
-    font-family: "Inter", sans-serif;
+* {
     margin: 0;
     padding: 0;
-    line-height: 1;
+    box-sizing: border-box;
+}
 
+body {
+    background-color: var(--cor-de-fundo) ;
+    font-family: "Inter", sans-serif;
+    line-height: 1;
     display: flex;
     flex-direction: column;
 }
@@ -196,8 +198,48 @@ section.hero {
 
 /*Sessão About*/
 
-section.about{
+section.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
 
+    padding: 32px 180px;
+}
+
+.skills__title {
+    font-size: 32px;
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--cor-da-fonte);
+    font-weight: bold;
+}
+
+.skills__items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.skills__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    border: 1px solid var(--cor-da-fonte);
+    border-radius: 8px;
+}
+
+.skills__item_icon {
+    width: 56px;
+}
+
+.skills__item_title {
+    font-size: 32px;
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--cor-da-fonte);
+    font-weight: bold;
 }
 
 /*Sessão Hobbies*/
@@ -277,7 +319,7 @@ section.hero {
     flex-direction: column;
     gap: 24px;
 
-    padding: 16px 32px 42px;
+    padding: 64px 32px 92px;
 }
 
 .hero__title {
@@ -297,6 +339,40 @@ section.hero {
 }
 
 /*Skills*/
+
+section.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    padding: 16px 32px;
+}
+
+.skills__title {
+    font-size: 32px;
+}
+
+.skills__items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.skills__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    border: 1px solid var(--cor-da-fonte);
+    border-radius: 8px;
+}
+
+.skills__item_icon {
+    width: 56px;
+}
 
 /*Hobbies*/
 
@@ -389,9 +465,50 @@ section.hero {
     font-weight: bold;
     color: var(--cor-da-fonte);
 }
+
+.divisor {  
+    margin: 0px 16px;
+    height: 1px;
+    background-color: var(--cor-da-fonte);
+}
+
 /*Sessão sobre*/
 
 /*Skills*/
+
+section.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    padding: 16px 16px;
+}
+
+.skills__title {
+    font-size: 32px;
+}
+
+.skills__items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.skills__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    border: 1px solid var(--cor-da-fonte);
+    border-radius: 8px;
+}
+
+.skills__item_icon {
+    width: 56px;
+}
 
 /*Hobbies*/
  
