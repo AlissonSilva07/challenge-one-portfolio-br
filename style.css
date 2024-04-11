@@ -8,6 +8,7 @@ coloque nas sessões indicadas*/
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #151515;
+   --cor-de-fundo-contato: #242525;
    --cor-da-fonte: #F7F7F7;
    --cor-da-fonte-sub: #d2d2d2;
    --cor-primary: #5FAC8B;
@@ -46,6 +47,24 @@ button {
     font-family: "Space Grotesk", sans-serif;
 }
 
+input, textarea {
+    position: relative;
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--cor-da-fonte);
+    border: none;
+    background: none;
+}
+
+input::before, textarea::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--cor-primary);
+}
+
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
 de utiliza-la. 
 
@@ -73,12 +92,12 @@ https://en.bem.info/methodology/quick-start/*/
     position: absolute;
     top: 0;
     right: 180px;
-    border-radius: 8px;
     z-index: 0;
 }
 
 .profile__img {
     width: 480px;
+    border-radius: 8px;
 }
 
 .profile__svg_circle {
@@ -349,8 +368,58 @@ section.projects{
 
 /*Contato*/
 
-section.formcontato{
+section.contato{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    gap: 32px;
 
+    background-color: var(--cor-de-fundo-contato);
+
+    padding: 64px 180px;
+}
+
+.contato__left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contato__left_title {
+    font-size: 64px;
+    font-weight: bold;
+    color: var(--cor-da-fonte);
+}
+
+.contato__left_subtitle {
+    width: 70%;
+    font-size: 16px;
+    color: var(--cor-da-fonte-sub);
+}
+
+.contato__right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+form.contato__right_form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contato__right_nome, .contato__right_email, .contato__right_assunto, .contato__right_mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.contato__right_input {
+    padding: 1rem;
 }
 
 /*footeer*/
