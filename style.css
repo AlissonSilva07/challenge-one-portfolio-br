@@ -45,6 +45,14 @@ a{
 button {
     cursor: pointer;
     font-family: "Space Grotesk", sans-serif;
+
+    position: relative;
+    width: fit-content;
+    padding: 1rem;
+    background-color: transparent;
+    color: var(--cor-da-fonte);
+    border: 1px solid var(--cor-primary);
+    border-radius: 8px;
 }
 
 input, textarea {
@@ -55,13 +63,13 @@ input, textarea {
     background: none;
 }
 
-input::before, textarea::before {
-    content: "";
+input::after, textarea::after {
+    content: "*";
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 2px;
+    height: 10px;
     background-color: var(--cor-primary);
 }
 
@@ -81,8 +89,8 @@ https://en.bem.info/methodology/quick-start/*/
 /* BG SVG & img */
 .svg_rings {
     position: absolute;
-    top: 100px;
-    left: -32px;
+    top: 120px;
+    left: -180px;
     width: 480px;
 
     z-index: 0;
@@ -198,16 +206,6 @@ section.hero {
     z-index: -1;
 }
 
-.hero__button {
-    position: relative;
-    width: fit-content;
-    padding: 1rem;
-    background-color: transparent;
-    color: var(--cor-da-fonte);
-    border: 1px solid var(--cor-primary);
-    border-radius: 8px;
-}
-
 .divisor {  
     margin: 0px 180px;
     height: 1px;
@@ -217,12 +215,22 @@ section.hero {
 /*Sessão About*/
 
 section.skills{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
 
     padding: 32px 180px;
+}
+
+.svg_rings_skills {
+    position: absolute;
+    bottom: 120px;
+    right: -180px;
+    width: 480px;
+
+    z-index: 0;
 }
 
 .skills__title {
@@ -368,7 +376,17 @@ section.projects{
 
 /*Contato*/
 
+.svg_rings_contato {
+    position: absolute;
+    bottom: 120px;
+    left: -180px;
+    width: 480px;
+
+    z-index: 0;
+}
+
 section.contato{
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: top;
@@ -420,6 +438,12 @@ form.contato__right_form{
 
 .contato__right_input {
     padding: 1rem;
+}
+
+.contato__right_enviar {
+    width: 100%;
+    display: flex;
+    justify-content: end;
 }
 
 /*footeer*/
