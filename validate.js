@@ -8,6 +8,7 @@ async function getGitHubRepos() {
     try {
         const response = await fetch('https://api.github.com/users/alissonsilva07/repos');
         const data = await response.json();
+        console.log(data)
         return data;
     } catch (error) {
         console.error('Error fetching data:', error);
@@ -24,7 +25,7 @@ async function renderizarDados() {
 
     const repos = []
 
-    repos.push(data[4])
+    repos.push(data[2])
     repos.push(data[7])
     repos.push(data[15])
     repos.push(data[16])

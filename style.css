@@ -207,6 +207,14 @@ section.skills{
 }
 
 .skills__title {
+    width: 100%;
+    text-align: start;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--cor-da-fonte);
+}
+
+.skills__title {
     font-size: 32px;
     
     color: var(--cor-da-fonte);
@@ -224,7 +232,6 @@ section.skills{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding: 16px;
 }
 
 .skills__item_title {
@@ -245,7 +252,7 @@ section.academics{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
 
     padding: 32px 180px;
 }
@@ -259,6 +266,7 @@ section.academics{
 }
 
 .academics__items {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
@@ -280,6 +288,7 @@ section.academics{
     font-size: 24px;
     font-weight: bold;
     color: var(--cor-da-fonte);
+    text-align: center;
 }
 
 .academics__item_subtitle {
@@ -292,7 +301,7 @@ section.projects{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
 
     padding: 32px 180px;
 }
@@ -312,22 +321,30 @@ section.projects{
 }
 
 .projects__item {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
+    padding: 1rem;
+    border: 2px solid var(--cor-da-fonte);
+    border-radius: 8px;
 }
 
 .projects__container__title {
-
+    color: var(--cor-da-fonte);
 }
 
 .projects__container__description {
-
+    color: var(--cor-da-fonte-sub);
+    text-align: center;
 }
 
 .projects__container__language {
-    
+    color: var(--cor-da-fonte-sub);
+    background-color: var(--cor-primary);
+    padding: 0.2rem;
+    border-radius: 8px;
 }
 
 /*Contato*/
@@ -430,11 +447,41 @@ section.skills{
     gap: 32px;
 }
 
-/*Hobbies*/
-
 /*Experiências acadêmicas*/
+section.academics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    padding: 32px 32px;
+}
+
+.academics__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.academics__title {
+    font-size: 32px;
+}
 
 /*Expeirência profissional*/
+section.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    padding: 32px 32px;
+}
+
+.projects__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
 
 }
 
@@ -529,8 +576,6 @@ section.hero {
     background-color: var(--cor-da-fonte);
 }
 
-/*Sessão sobre*/
-
 /*Skills*/
 
 section.skills{
@@ -544,20 +589,65 @@ section.skills{
 
 .skills__title {
     font-size: 32px;
+    text-align: center;
 }
 
 .skills__items {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 32px;
 }
 
-/*Hobbies*/
+.skills__item {
+    align-items: center;
+}
  
 /*Formação Acadêmica*/
 
+section.academics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    padding: 32px 16px;
+}
+
+.academics__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.academics__title {
+    font-size: 32px;
+    text-align: center;
+}
+
 /*Experiência Profissional*/
+
+section.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    padding: 32px 16px;
+}
+
+.projects__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.projects__title {
+    font-size: 32px;
+    text-align: center;
+}
 
  /*Contato*/
 
