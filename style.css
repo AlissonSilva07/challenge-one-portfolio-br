@@ -43,7 +43,7 @@ a{
 
 button {
     cursor: pointer;
-    font-family: "Inter", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
@@ -239,22 +239,95 @@ section.skills{
     color: var(--cor-da-fonte-sub);
 }
 
-/*Sessão Hobbies*/
-
-section.hobbies{
-    
-}
-
 /* Experiência Acadêmica*/
 
-section.academic{
+section.academics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 
+    padding: 32px 180px;
+}
+
+.academics__title {
+    width: 100%;
+    text-align: start;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--cor-da-fonte);
+}
+
+.academics__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.academics__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.academics__item_img {
+    width: 240px;
+    height: 240px;
+}
+
+.academics__item_title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cor-da-fonte);
+}
+
+.academics__item_subtitle {
+    color: var(--cor-da-fonte-sub);
 }
 
 /* experiência*/
 
-section.experience{
+section.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 
+    padding: 32px 180px;
+}
+
+.projects__title {
+    width: 100%;
+    text-align: start;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--cor-da-fonte);
+}
+
+.projects__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.projects__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.projects__container__title {
+
+}
+
+.projects__container__description {
+
+}
+
+.projects__container__language {
+    
 }
 
 /*Contato*/
